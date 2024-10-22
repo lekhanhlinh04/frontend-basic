@@ -1,0 +1,73 @@
+.floating-navbar {
+    position: fixed;
+    top: -90px;
+    width: 100%;
+    background-color: white;
+    transition: top 0.3s;
+    z-index: 9999;
+}
+
+.show-navbar {
+    top: 0;
+}
+
+.content {
+    height: 2000px;
+    background-color: lightgray;
+   
+}
+
+
+
+
+.scroll-img{
+    height: 400px;
+}
+
+.nav-tabs .nav-link {
+    font-size: 1.5rem;
+    padding: 1rem 2rem; /* Tăng kích thước padding để tab to hơn */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    border-radius: 0.5rem;
+    border: none;
+    color: black; /* Màu chữ mặc định */
+    font-weight: 750; /* Đậm chữ */
+}
+
+.nav-tabs .nav-link.active {
+    background-color: red;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Đổ bóng mạnh hơn khi active */
+}
+
+/* Đổi màu và đổ bóng khi hover vào tab (chỉ khi không active) */
+.nav-tabs .nav-link:hover:not(.active) {
+    background-color: lightgray;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Đổ bóng mạnh hơn khi hover */
+}
+/* Tab con */
+
+.nav-tabs .nav-link-sub {
+   
+    padding: 1rem 2rem; /* Tăng kích thước padding để tab to hơn */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: lightgray;
+}
+
+.nav-tabs.sub-tabs .nav-link-sub {
+    color: #333; /* Chữ xám đậm */
+}
+
+/* Tab con khi active */
+.nav-tabs.sub-tabs .nav-link-sub.active {
+    background-color: #e0e0e0; /* Nền xám khi hover */
+    color: #000; /* Chữ đen khi active */
+}
+
+/* Tab con hover */
+.nav-tabs.sub-tabs .nav-link-sub:hover {
+    background-color: #e0e0e0; /* Nền xám khi hover */
+}
